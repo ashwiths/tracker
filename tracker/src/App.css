@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f7fa; /* Light background */
+  color: black; /* Set the text color to black */
+  margin: 0;
+  padding: 0;
+  display: flex;             /* Flexbox layout */
+  justify-content: center;   /* Horizontally center the content */
+  align-items: center;       /* Vertically center the content */
+  height: 100vh;             /* Full viewport height */
+  text-align: center;        /* Center text inside elements */
+}
+
+/* Main container styling */
+.app-container {
+  width: 80%;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-container:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  color: black; /* Black for title */
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Expense Summary */
+.expense-summary {
+  background-color: #4caf50; /* Green background for total expenses */
+  color: black; /* Black text */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.expense-summary h2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Filter Container */
+.filter-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-filter {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #4caf50;
+  transition: border 0.3s ease-in-out;
+}
+
+.category-filter:focus {
+  border: 1px solid #4caf50; /* Focus on green color */
+  outline: none;
+}
+
+/* Form Styling */
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.expense-input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #131313;
+  border-radius: 5px;
+  background-color: #515151;
+  transition: border 0.3s ease-in-out;
+}
+
+.expense-input:focus {
+  border: 1px solid #4caf50;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #4caf50; /* Green for submit button */
+  color: black; /* Black text */
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.edit-btn {
+  background-color: #ffa500; /* Orange for edit button */
+  color: black; /* Black text */
+}
+
+.edit-btn:hover {
+  background-color: #ff8c00;
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red for delete button */
+  color: black; /* Black text */
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Expense List */
+.expense-list {
+  margin-top: 20px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f5f9; /* Light background for items */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.expense-item:hover {
+  background-color: #e4e9f2; /* Lighter hover background */
+}
+
+.expense-item-info {
+  flex-grow: 1;
+}
+
+.expense-name {
+  font-size: 1.3rem;
+  color: black; /* Black color for expense name */
+  margin: 0;
+  font-weight: 600;
+}
+
+.expense-category {
+  font-size: 1rem;
+  color: black; /* Black color for category */
+  margin: 5px 0;
+}
+
+.expense-amount {
+  font-size: 1.2rem;
+  color: black; /* Black color for amount */
+}
+
+.expense-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    width: 90%;
+  }
+
+  .expense-form {
+    gap: 12px;
+  }
+}
